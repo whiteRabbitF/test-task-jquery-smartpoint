@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с таблицей и графиками</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Страница с таблицей и графиками</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <table id="data-table" class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Город</th>
+                    <th scope="col">Кол-во жителей</th>
+                    <th scope="col">Кол-во авто</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Круговая диаграмма по городу и жителям</h5>
+                    <canvas id="cityPopulationChart"></canvas>
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">Столбчатая диаграмма по городу с соотношением жителей и авто</h5>
+                    <canvas id="cityRatioChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
